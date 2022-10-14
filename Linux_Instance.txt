@@ -1,0 +1,35 @@
+Steps to create 2 linux instances
+
+Create a free Amazon account 
+
+search for EC2 instance under services 
+
+select Amazon Linux 2 AMI(HVM) for instance type
+
+Create a key pair login
+
+enable auto-assign public IP
+
+add additional security group rule
+
+enable source type to anywhere and add port 8080
+
+increase storage from 8gb-10gb 
+
+Change the number of instances from 1 to 2 
+
+Launch instance
+
+Connect directly to the first instance 
+
+from there launch vi editor with .pem (Linuxkey.pem) name for the file key
+
+use the below command with the .pem key file created
+
+ssh -i Linuxec2.pem ec2-user@172.31.34.211
+
+
+
+
+
+
