@@ -28,7 +28,17 @@ use the below command with the .pem key file created
 
 ssh -i Linuxec2.pem ec2-user@172.31.34.211
 
+######################################################
+Login without .pem file
 
+Use the below command to edit the sshd_config file and change "PasswordAuthentication" from "no" to "yes"
+
+This is done on both servers
+
+ Create a keygen from the first instance( 172.31.43.60) and copy it to the second server(172.31.34.211)
+use the command below from /etc/ssh
+
+sudo ssh-copy-id ec2-user@172.31.34.211
 
 
 
